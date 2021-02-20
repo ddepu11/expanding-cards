@@ -7,12 +7,14 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-  background: radial-gradient(#6cbcdb, rgb(219, 129, 129));
+  background: radial-gradient(#2d6d86, #eee);
+  padding: 50px 0;
 }
+
 .container {
   max-width: 90vw;
   margin: 0px auto;
-  margin-top: 80px;
+  max-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,7 +47,7 @@ body {
   height: 80vh;
   border-radius: 50px;
   position: relative;
-  transition: all 1s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: flex 1s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 .common:hover {
   cursor: pointer;
@@ -58,7 +60,7 @@ body {
   font-size: 0em;
   font-weight: 900;
   letter-spacing: 2px;
-  transition: all 0.8s ease-in;
+  transition: font-size 0.8s ease-in;
 }
 .grow {
   flex: 10;
@@ -69,6 +71,7 @@ body {
 .show-text {
   font-size: 2em;
 }
+
 @media (max-width: 480px) {
   .fourth {
     display: none;
